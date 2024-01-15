@@ -43,7 +43,7 @@ while(True):
     #Determining common factors between both numbers, remaining within
     #the range of the lowest number, no unecessary math being performed
     for i in range(integer_factor):
-        if(i == 0): #Skips diving by zero to avoid crashes
+        if(i == 0): #Skips dividing by zero to avoid crashes
             continue
         if((integer_1 % i) == 0 and (integer_2 % i) == 0):
             print(str(i), end=' ');
