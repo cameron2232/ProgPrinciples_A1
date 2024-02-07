@@ -8,61 +8,55 @@
 # and then asks the user if they want to enter two new integers or terminate 
 # the program.
 
-#Initialize variables to be used in program
-integer_1 = integer_2 = integer_factor = 0; 
-user_input = '';
-
-while(True):
-    #Two while loops requesting for the first and second integer to be given,
-    #providing an error message and relooping if provided with an invalid input
-    while(integer_1 <= 0):
-        integer_1 = int(input(f'= Enter the first positive integer: '));
-        if(int(integer_1) <=0):
-            print(f'Error: number must be positive.');
+#while True looping the program until user chooses to exit
+while True:
+    integer_one = integer_two = 0
     
-    while(integer_2 <= 0):
-            integer_2 = int(input(f'= Enter the first positive integer: '));
-            if(integer_2 <=0):
-                print(f'Error: number must be positive.');   
-
-    #Comparing each integer and returning whether integer_1 is larger, greater,
-    #or equal to each other.
-    if(integer_1 > integer_2):
-        print(f'= ' + str(integer_1) + f' is greater than ' + str(integer_2));
-        integer_factor = integer_2;
-    elif(integer_1 < integer_2):
-        print(f'= ' + str(integer_1) + f' is less than ' + str(integer_2)); 
-        integer_factor = integer_1;
-    else:
-        print(f'= The two numbers are equal');
-        integer_factor = integer_1;
-  
-    print(f'= Common factors of ', str(integer_1), ' and ', integer_2, ' are: ',
-          end='');
+    #two while loops asking user to input an integer, and looping and asking 
+    #user to reenter if the inputted integer is less than or equal to 0
+    #first for integer_one
+    while integer_one <= 0: 
+        integer_one = int(input('= Enter the first positive integer: '))
+        if integer_one <= 0: print('Error: number must be positive') 
+        else: break
+    #repeat some process above for integer_two    
+    while integer_two <= 0: 
+        integer_two = int(input('= Enter the second positive integer: '))
+        if integer_two <= 0: print('Error: number must be positive') 
+        else: break
     
-    #Determining common factors between both numbers, remaining within
-    #the range of the lowest number, no unecessary math being performed
-    for i in range(integer_factor):
-        if(i == 0): #Skips dividing by zero to avoid crashes
-            continue
-        if((integer_1 % i) == 0 and (integer_2 % i) == 0):
-            print(str(i), end=' ');
-    print('');
-    integer_1 = integer_2 = 0;
-
-    #Asking the user if they want to play again, providing an error message
-    #and relooping if provided with an incorrect input
-    while(True):
-        user_input = input(f'= Play again (Y/N or y/n): ');
-        if(user_input == 'Y' or user_input == 'y' or user_input == 'N' 
-           or  user_input == 'n'):
-            break;
-        else:
-            print(f'Error: choice must be Y/N or y/n.');
+    #print whether integer_one is greater, smaller, or equal to integer_two
+    print(f'= {integer_one} is greater than {integer_two}' 
+          if integer_one > integer_two 
+          else f'= {integer_one} is less than {integer_two}' 
+          if integer_one < integer_two 
+          else '= The two numbers are equal')
     
-    if(user_input == 'N' or user_input == 'n'):
-        break;
+    #set integer_factor to the smaller number for for loop range
+    if integer_one >= integer_two: integer_factor = integer_two
+    else: integer_factor = integer_one
+    
+    print(f'= Common factors of {integer_one} and {integer_two} are: ', end='')
+    
+    #for loop ranging from 1 to the smallest number, checking if
+    #both integers divided by i are 0. If both are, print the number.
+    for i in range (1, (integer_factor+1)): 
+        if(integer_one % i) == 0 and (integer_two % i) == 0: 
+            print(str(i), end=' ')
+    
+    print()
+    
+    #while True loop asking the user to input if they would like to repeat
+    #the program. if Y/N or y/n is not provided as an input, loop and 
+    #have the user input again. if Y/y is inputed, loop the entire program
+    #if N/n is inputed, break out of the program and end.
+    while True:
+        user_input = input('= Play again (Y/N or y/n): ')
+        if (user_input == 'Y' or user_input == 'y' or user_input == 'N' or  
+            user_input == 'n'): 
+            break
+        else: print('Error: choice must be Y/N or y/n')
         
-    
-    
-         
+    if user_input == 'N' or user_input == 'n': break
+            
+        

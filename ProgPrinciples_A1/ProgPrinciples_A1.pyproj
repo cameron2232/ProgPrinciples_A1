@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>718185f8-fad1-4630-9ef2-6eb4d52483f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ch3a_notes.py</StartupFile>
+    <StartupFile>assignment1_mclean.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>ProgPrinciples_A1</Name>
     <RootNamespace>ProgPrinciples_A1</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,11 +22,26 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="assignment1bad_mclean.py" />
     <Compile Include="assignment1_mclean.py" />
     <Compile Include="ch2a_notes.py" />
     <Compile Include="ch2c_notes.py" />
     <Compile Include="ch3a_notes.py" />
+    <Compile Include="ch3b_notes.py" />
+    <Compile Include="ch4a_notes.py" />
+    <Compile Include="ch4b_notes.py" />
     <Compile Include="class3.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>0.0</Version>
+      <Description>env (Python 3.12 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
