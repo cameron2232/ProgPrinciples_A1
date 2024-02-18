@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>718185f8-fad1-4630-9ef2-6eb4d52483f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ch5c_notes.py</StartupFile>
+    <StartupFile>assignment2_mclean.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,8 @@
   <ItemGroup>
     <Compile Include="assignment1bad_mclean.py" />
     <Compile Include="assignment1_mclean.py" />
+    <Compile Include="assignment2_mclean.py" />
+    <Compile Include="assignment2_mclean_helpers.py" />
     <Compile Include="ch2a_notes.py" />
     <Compile Include="ch2c_notes.py" />
     <Compile Include="ch3a_notes.py" />
@@ -32,6 +34,7 @@
     <Compile Include="ch4b_notes.py" />
     <Compile Include="ch4c_notes.py" />
     <Compile Include="ch5a_notes.py" />
+    <Compile Include="ch5b_notes.py" />
     <Compile Include="ch5c_notes.py" />
     <Compile Include="class3.py" />
     <Compile Include="shapes.py" />
