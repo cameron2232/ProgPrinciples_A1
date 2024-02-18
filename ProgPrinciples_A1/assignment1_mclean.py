@@ -3,10 +3,10 @@
 # Assignment: Assignment #1
 # Date: January 10, 2024
 # Program: assignment1_mclean.py
-# Description: An application that reads two positive integers, prints which
-# integer is bigger, prints the common factors between both numbers,
-# and then asks the user if they want to enter two new integers or terminate 
-# the program.
+# Description: An application that reads two positive integers, prints whether
+# integer_one is bigger or smaller, prints the common factors between both
+# numbers, and then asks the user if they want to enter two new integers or
+# terminate the program.
 
 #while True looping the program until user chooses to exit
 while True:
@@ -49,7 +49,7 @@ while True:
     #while True loop asking the user to input if they would like to repeat
     #the program. if Y/N or y/n is not provided as an input, loop and 
     #have the user input again. if Y/y is inputed, loop the entire program
-    #if N/n is inputed, break out of the program and end.
+    #if N/n is inputed, break out of the While True and end.
     while True:
         user_input = input('= Play again (Y/N or y/n): ')
         if (user_input == 'Y' or user_input == 'y' or user_input == 'N' or  
