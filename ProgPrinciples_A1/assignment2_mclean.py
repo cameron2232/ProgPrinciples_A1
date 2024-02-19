@@ -7,6 +7,7 @@
 # a dice, rolls said dice the provided amount of times, and prints out the
 # count of each side rolled and a corresponding visual respresentation
 
+from statistics import linear_regression
 import assignment2_mclean_helpers
 import math
 
@@ -20,7 +21,7 @@ def main():
             'Rolling Times(1, 10000, 0 to stop): ', 'Invalid number')
     
         # Ends program if user inputs 0 in rolling_times function
-        if rolling_times == 0:
+        if rolling_times == None:
             return None
           
         # Calls dice_rolling function, simulating dice rolls for count
@@ -31,12 +32,8 @@ def main():
  
         # Goes through checking amount each side was rolled, and setting
         # largest_dice to the largest number
-        largest_dice = dice_one
-        if largest_dice < dice_two: largest_dice = dice_two
-        if largest_dice < dice_three: largest_dice = dice_three
-        if largest_dice < dice_four: largest_dice = dice_four
-        if largest_dice < dice_five: largest_dice = dice_five
-        if largest_dice < dice_six: largest_dice = dice_six
+        largest_dice = max(dice_one, dice_two, dice_three, dice_four,
+            dice_five, dice_six)
     
         char_count = 0
 
@@ -93,9 +90,7 @@ def main():
         assignment2_mclean_helpers.print_results('Six  ', char_count, '=',
             dice_six)
         
-        print(), print()
+        print('\n')
     
     
-
-
 main()

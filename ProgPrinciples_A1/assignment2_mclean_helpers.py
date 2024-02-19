@@ -28,7 +28,7 @@ def get_rolls(lower_bound, upper_bound, prompt_message, error_message):
         # prints 'Thank you' if user inputs 0
         if rolling_times == 0:
             print('Thank you')
-            return rolling_times
+            return None
         
         # prints an error message if user inputs invalid number
         elif rolling_times < lower_bound or rolling_times > upper_bound:
