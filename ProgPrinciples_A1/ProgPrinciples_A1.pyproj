@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>718185f8-fad1-4630-9ef2-6eb4d52483f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>midterm_q4_mclean.py</StartupFile>
+    <StartupFile>ch6a_notes.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -42,6 +42,7 @@
     <Compile Include="midterm_q3_mclean.py" />
     <Compile Include="midterm_q4_mclean.py" />
     <Compile Include="shapes.py" />
+    <Compile Include="ch6a_notes.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
@@ -53,6 +54,10 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="example.txt" />
+    <Content Include="products.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
