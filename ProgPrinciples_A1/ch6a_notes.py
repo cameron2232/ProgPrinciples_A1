@@ -124,16 +124,16 @@ def product_file():
     with open('products.csv', 'r') as f: 
         total, count = 0.0, 0
 
-        # using for loop to go over the file line by line
-        # for line in f:
-        #     # phone,2022,235235.23\n -> name, year, price
-        #     fields = line.rstrip('\n').split(',') # a list
-        #     name = fields[0]
-        #     year = int(fields[1])
-        #     price = float(fields[2]) 
-        #     print(f'{name:15}{year:8}{price:10}') #:width
-        #     total += price 
-        #     count += 1 
+         #using for loop to go over the file line by line
+        for line in f:
+             # phone,2022,235235.23\n -> name, year, price
+             fields = line.rstrip('\n').split(',') # a list
+             name = fields[0]
+             year = int(fields[1])
+             price = float(fields[2]) 
+             print(f'{name:15}{year:8}{price:10}') #:width
+             total += price 
+             count += 1 
 
         # using while loop to do the same
         line = f.readline()
