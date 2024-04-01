@@ -37,11 +37,18 @@
     <Compile Include="ch5a_notes.py" />
     <Compile Include="ch5b_notes.py" />
     <Compile Include="ch5c_notes.py" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="ch6a_notes.py" />
+>>>>>>> Stashed changes
     <Compile Include="ch6b_notes.py" />
     <Compile Include="ch7a_notes.py" />
     <Compile Include="ch7b_notes.py" />
     <Compile Include="ch7c_notes.py" />
+<<<<<<< Updated upstream
     <Compile Include="ch8_notes.py" />
+=======
+>>>>>>> Stashed changes
     <Compile Include="class3.py" />
     <Compile Include="midterm_q1_mclean.py" />
     <Compile Include="midterm_q2_mclean.py" />
