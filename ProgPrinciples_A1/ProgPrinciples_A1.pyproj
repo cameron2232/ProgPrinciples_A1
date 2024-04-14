@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>718185f8-fad1-4630-9ef2-6eb4d52483f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>assignment3_starter.py</StartupFile>
+    <StartupFile>assignment3_McLean.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,7 +26,7 @@
     <Compile Include="assignment1_mclean.py" />
     <Compile Include="assignment2_mclean.py" />
     <Compile Include="assignment2_mclean_helpers.py" />
-    <Compile Include="assignment3_starter.py" />
+    <Compile Include="assignment3_McLean.py" />
     <Compile Include="ch2a_notes.py" />
     <Compile Include="ch2c_notes.py" />
     <Compile Include="ch3a_notes.py" />
