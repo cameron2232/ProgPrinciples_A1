@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>718185f8-fad1-4630-9ef2-6eb4d52483f8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Ch10_OOP_exercise.py</StartupFile>
+    <StartupFile>final_q2_mclean.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -49,6 +49,8 @@
     <Compile Include="Ch8_strings_exercise.py" />
     <Compile Include="ch9_notes.py" />
     <Compile Include="class3.py" />
+    <Compile Include="final_q1_mclean.py" />
+    <Compile Include="final_q2_mclean.py" />
     <Compile Include="midterm_q1_mclean.py" />
     <Compile Include="midterm_q2_mclean.py" />
     <Compile Include="midterm_q3_mclean.py" />
@@ -68,6 +70,7 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="employees.txt" />
     <Content Include="example.txt" />
     <Content Include="products.csv" />
     <Content Include="random.txt" />
